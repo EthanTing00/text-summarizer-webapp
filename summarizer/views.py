@@ -52,6 +52,6 @@ def summary(request):
     for i in range(0,len(sortedSentences)//10 + 1):
         summary += sortedSentences[i]
 
-    return render(request, 'summary.html', {'result':summary})
+    return render(request, 'home.html', {'result':summary})
 
 
